@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">DOCKER LEARNING PROJECT</p>
+      <h1>Task Manager</h1>
+      <p class="subtitle">A simple app running across Docker containers.</p>
+    </header>
+
+    <form id="task-form" class="task-form">
+      <input id="task-title" type="text" maxlength="120" placeholder="What do you need to do?" required>
+      <button type="submit">Add task</button>
+    </form>
+
+    <section class="toolbar">
+      <span id="task-count">Loading tasks...</span>
+      <button id="refresh-button" class="secondary" type="button">Refresh</button>
+    </section>
+
+    <p id="message" role="status" aria-live="polite"></p>
+    <ul id="task-list" class="task-list"></ul>
+    <footer>Frontend: Nginx · API: Node.js/Express · Database: MongoDB</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
